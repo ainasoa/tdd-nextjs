@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/pages/*": ["pages/*"],
+      "@/styles/*": ["styles/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "types.d.ts",
+    "mocks/nextAuth.js",
+    "mocks/server.ts",
+    "uix/UserList.test.js",
+    "uix/UserForm.test.js",
+    "uix/Login.test.js",
+    "pages/api/auth/nextauth.ts",
+    "pages/lib/AppBar.test.js",
+    "pages/api/auth/[...nextauth].ts"
+  ],
+  "exclude": ["node_modules"]
+}
